@@ -1,0 +1,2321 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.t_nobr {
+  display: none;
+}
+
+
+/*-------------------- ヘッダー -----------------------*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.header_title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.header_title img {
+  width: 130px;
+}
+.header .header_title .text {
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  vertical-align: bottom;
+}
+.header a {
+  color: #dfdfdf;
+  text-decoration: unset;
+}
+
+/* -------------ボタン--------------------- */
+.button[type="button"] {
+  background-color: rgb(214, 98, 78);
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 10px 40px;
+  color: white;
+  font-size: 14px;
+}
+
+.button[type="button"]:hover {
+  background-color: rgb(243, 87, 60);
+  cursor: pointer;
+}
+
+/* ---------------------イメージカンプ -------------------*/
+.ic {
+  background-image: url("image/main.jpg");
+  background-size: cover;
+  padding-top: 80px;
+  margin-top: 75px;
+  padding-bottom: 80px;
+}
+
+.ic .title_ic {
+  font-size: 1.8em;
+  line-height: 2em;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+.ic .text {
+  font-size: 1.4em;
+  font-weight: 550;
+  letter-spacing: 1.5px;
+  padding: 30px 0 0;
+}
+.ic img {
+  width: 300px;
+}
+
+/*-------------------------- コンタクト-------------------- */
+.contact {
+  margin: 0;
+  background-color: rgb(240, 174, 52);
+  color: #ffffff;
+  font-size: 1.6em;
+  padding-top: 18px;
+  padding-bottom: 45px;
+  opacity: 0.9;
+}
+
+.contact_title .text {
+  margin: 15px 0 0 0;
+}
+.contact_title .attensition {
+  display: inline-block;
+  font-size: 18px;
+  color: red;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.contact .button {
+  border: 0;
+  border-radius: 50px;
+  width: 65%;
+  margin: 40px 0;
+  font-size: 30px;
+  padding: 30px 0;
+}
+.sure .sure_button {
+  border: 0;
+  background-color: rgb(70, 124, 240);
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 3px 10px;
+}
+.sure .tw_button {
+  border: 0;
+  background-color: rgb(106, 182, 240);
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 3px 10px;
+}
+
+/*--------------------- アセンション-------------------------------- */
+.assertion {
+  padding: 50px 0 90px 0;
+  background-image: url("image/introbottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.assertion .text {
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  margin-top: 1.6em;
+  color: #3e3b3b;
+}
+.nobr {
+  display: none;
+}
+.assertion .text:nth-of-type(3) {
+  margin-bottom: 100px;
+}
+.assertion .line_mark {
+  font-weight: bold;
+  background: linear-gradient(transparent 70%, #ebb94d 70%);
+}
+.title {
+  width: 900px;
+  padding: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+.title::before, .title::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.title::before {
+  border-top: 3px solid rgb(240, 174, 52);
+  border-left: 3px solid rgb(240, 174, 52);
+  top: 0;
+  left: 0;
+}
+.title::after {
+  border-bottom: 3px solid rgb(240, 174, 52);
+  border-right: 3px solid rgb(240, 174, 52);
+  bottom: 0;
+  right: 0;
+}
+
+/*------------------------- アバウト ---------------------------*/
+.about {
+  background-color: #f9efdb;
+  padding: 50px 0;
+  position: relative;
+}
+.about .point_icon {
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffb648;
+  color: white;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: -50px;
+  left: 46.5%;
+}
+
+.about .text {
+  font-size: 22px;
+}
+.about_title .title {
+  margin-top: 30px;
+}
+.about .skill {
+  background-color: #ffffff;
+  width: 1100px;
+  margin: 10px auto;
+  border: 2px solid #ffb765;
+  border-radius: 5px;
+  padding: 10px 30px 30px 20px;
+}
+.skill .skill_box {
+  display: flex;
+  justify-content: center;
+}
+
+.skill .skill_box li {
+  list-style-type: none;
+  margin-left: 2.5em;
+}
+.skill .skill_box .skill_icon {
+  display: block;
+}
+
+/*--------------------------- ステップ----------------------------------- */
+.step {
+  background-image: url("image/aboutsecondbg.jpg");
+  background-size: cover;
+  padding: 30px 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+.step .step_title {
+  font-size: 1.5em;
+}
+.step .text {
+  letter-spacing: 2px;
+}
+.step .text span {
+  color: #ffb765;
+}
+.step .step_items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.step_items .item {
+  width: 23%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-left: 1em;
+  padding: 25px;
+  background-color: #ffffff;
+  color: #3e3b3b;
+}
+.step_items .item .item_title {
+  border: 1px solid #ffb648;
+  border-radius: 5px;
+  background-color: #ffb648;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.step_items .item .text_min {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.step_items .text {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/*----------------------------- 一言 ------------------------------*/
+.word {
+  background-color: rgb(70, 101, 201);
+  padding: 35px 0px;
+  color: #fff;
+}
+.word .text {
+  margin: 0;
+  margin: 5px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.word .text span {
+  color: #ffb765;
+}
+
+/*--------------------------- テーチィング ---------------------------*/
+.teaching {
+  padding: 35px 0;
+}
+.t_title {
+  font-size: 1.9em;
+  letter-spacing: 2px;
+  margin: 25px 0;
+}
+.t_title span {
+  font-size: 14px;
+}
+.teaching .text {
+  font-size: 22px;
+  margin: 35px 0;
+  font-weight: normal;
+}
+.teaching .t_items {
+  display: flex;
+  justify-content: center;
+}
+.t_items .t_item {
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+/*--------------------------- メリット ---------------------------*/
+.merit {
+  background-color: #f9efdb;
+  padding: 40px;
+}
+.merit .min_title {
+  display: block;
+  font-size: 17px;
+  margin: 0;
+}
+.merit_items {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.merit_items .merit_item {
+  width: 22%;
+  margin-left: 25px;
+  text-align: left;
+}
+.merit_item .text_title {
+  font-size: 20px;
+  color: #ffb765;
+  margin: 10px 0;
+}
+.merit_item img {
+  width: 100%;
+}
+.merit_item .text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.merit .support {
+  width: 1100px;
+  margin: 45px auto;
+  background-color: #ffffff;
+  border: 1px solid #ffb765;
+  padding: 30px;
+}
+.support .s_title {
+  font-size: 1.8em;
+  color: #ffb765;
+  letter-spacing: 1.2px;
+}
+.support .s_text {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.support .text {
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.wran {
+  color: #666970;
+  letter-spacing: 1.5px;
+}
+
+/*------------------------- 創業メンバー ----------------------------- */
+.fm {
+  background-image: url("image/teacherbg.jpg");
+  background-size: cover;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+.fm .fm_title {
+  font-size: 30px;
+  margin: 30px;
+  font-weight: normal;
+}
+.fm .subtext {
+  font-size: 15px;
+  letter-spacing: 1.7px;
+  font-weight: bold;
+}
+.members {
+  display: flex;
+  justify-content: center;
+  margin-top: 210px;
+}
+.members .member {
+  width: 400px;
+  margin-left: 2em;
+  border: 2px solid #fff;
+  padding: 4em;
+  position: relative;
+}
+.member img {
+  border-radius: 50%;
+  position: absolute;
+  top: -160px;
+  right: 23.5%;
+}
+.member .text {
+  font-size: 16px;
+  letter-spacing: 1.8px;
+}
+.member .alf {
+  text-align: left;
+}
+
+/*-------------------------- Question -----------------------------*/
+.question {
+  background-color: #e8bd52; 
+  color: #ffffff;
+  padding: 30px;
+}
+.question .qs::before {
+  border-top: 3px solid rgb(252, 251, 250);
+  border-left: 3px solid rgb(247, 247, 247);
+  top: 0;
+  left: 0;
+}
+.question .qs::after {
+  border-bottom: 3px solid rgb(245, 244, 242);
+  border-right: 3px solid rgb(248, 247, 244);
+  bottom: 0;
+  right: 0;
+}
+.question .point_icon {
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fcfcfc;
+  color: #e8bd52;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+.triangle-bottom {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 30px;
+  border-color: #e8bd52 transparent transparent transparent;
+}
+
+/*----------------------------- アンサー -------------------------- */
+.answer {
+  padding-bottom: 30px;
+}
+.answer .a_title {
+  font-size: 28px;
+  margin: 15px;
+}
+.answer .subtext {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.answer .wran {
+  margin: 30px;
+}
+.coment {
+  display: flex;
+  margin: 0 auto;
+  width: 46%;
+  margin-bottom: 35px;
+}
+.coment img {
+  width: 225px;
+  height: 225px;
+  border: 2px solid #ffb648;
+}
+.coment .c_text {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 18px;
+  color: #74767b;
+  letter-spacing: 1.4px;
+}
+.c_text .profile {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+}
+
+/*------------------------- コンテンツ ------------------------*/
+.content {
+  background-image: url(image/classbg.jpg);
+  background-size: cover;
+  padding: 50px;
+  color: #fff;
+}
+.content .title_co {
+  font-size: 2em;
+  margin: 0;
+}
+.content .text {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.content .content_box {
+  display: flex;
+  justify-content: center;
+}
+.content_box .table {
+  margin: 30px 2.5em 0 0;
+  border: 1px solid rgb(75, 91, 235);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table th {
+  width: 370px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+  vertical-align: top;
+  background: #0e5bce;
+  color: #ffffff;
+}
+.table td {
+  border-bottom: 1px solid #d8dceb;
+  padding: 15px 0;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*------------------------ 受講の流れ ------------------------------*/
+.story {
+  padding: 30px;
+}
+.story .title_st {
+  font-size: 27px;
+  margin: 25px 0;
+}
+.story .st_img {
+  margin: 30px;
+}
+.knowingly input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+.story .knowingly {
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(254, 241, 207);
+  width: 1100px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+.knowingly .knowingly_title {
+  width: 250px;
+  position: relative;
+}
+
+.knowingly .text_th {
+  width: 250px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 0 0;
+}
+.knowingly .text_ti {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 0 0;
+}
+.knowingly .text {
+  text-align: left;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+.knowledge_texts .text_min {
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/*------------------------- バンコクについて -------------------------------*/
+.why {
+  background-image: url(image/bangkokbg.jpg);
+  background-size: cover;
+  padding: 7em 20em;
+  text-align: left;
+  color: #ffffff;
+  letter-spacing: 1.7px;
+}
+.why .text_ti {
+  font-size: 2em;
+}
+.why .text {
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: 2px;
+}
+.why_list {
+  padding-left: 18px;
+  margin: 25px 0;
+}
+.why_list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 550;
+}
+/*------------------------------- 特典 -----------------------*/
+.privilege {
+  background-color: #edbb3d;
+  padding: 20px;
+  letter-spacing: 1.3px;
+}
+.privilege .title_pr {
+  font-size: 28px;
+  margin: 35px;
+  font-weight: 600;
+}
+.privilege .text {
+  font-size: 16px;
+}
+.privilege .text span {
+  color: #ffffff;
+}
+.privilege .pl_box {
+  border: 1px solid #fff;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto 20px;
+  position: relative;
+  padding: 60px 2.5em;
+}
+.pl_box .box_title {
+  position: absolute;
+  display: inline-block;
+  top: -35px;
+  left: 240px;
+  padding: 10px 60px;
+  line-height: 2;
+  font-size: 25px;
+  background-color: #edbb3d;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.pl_box .item {
+  background-color: #fff;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 30px 10px;
+}
+.pl_box .item .item_title {
+  font-size: 22px;
+  color: #edbb3d;
+  margin: 0;
+  margin: 15px 0;
+}
+.pl_box .item .text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*---------------------------- 企業理念 ---------------------------*/
+.philosophy {
+  background-image: url(image/specialdetail.jpg);
+  background-size: cover;
+  padding: 50px 0 80px 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.philosophy .title_ph {
+  font-size: 2em;
+}
+.philosophy .text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.ph::before {
+  border-top: 3px solid rgb(253, 252, 251);
+  border-left: 3px solid rgb(250, 249, 248);
+  top: 0;
+  left: 0;
+}
+.ph::after {
+  border-bottom: 3px solid rgb(250, 249, 247);
+  border-right: 3px solid rgb(252, 251, 250);
+  bottom: 0;
+  right: 0;
+}
+
+/*--------------------------- メッセージ ---------------------------*/
+.message {
+  padding: 50px 0;
+}
+.message .title_ms {
+  font-size: 2em;
+}
+.message .subtitle {
+  font-size: 18px;
+  margin: 40px;
+}
+.message_ceo {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+.message_ceo img {
+  width: 160px;
+  height: 120px;
+}
+.message_ceo .message_text {
+  text-align: left;
+  margin-left: 2em;
+  color: #666970;
+  font-size: 14px;
+}
+.message_text .text {
+  margin-top: 0;
+}
+.message_text .items {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+/*-------------------------- フォーム ----------------------------*/
+.form {
+  background-color: #edbb3d;
+  padding: 50px;
+  color: #3e3b3b;
+}
+.form .title_fo {
+  font-size: 2em;
+}
+.form .subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.form .form_item {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 0 auto;
+}
+.form_item input {
+  font-size: 14px;
+  margin-bottom: 30px;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+.form_item input[type="submit"] {
+  background-color: rgb(214, 98, 78);
+  border: 0 solid;
+  border-radius: 25px;
+  padding: 10px 40px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 1.5em;
+}
+.form_item textarea {
+  border: 0;
+  border-radius: 5px;
+  margin: 30px 0 50px;
+  padding: 10px;
+  font-size: 14px;
+  color: #76787d;
+}
+
+/*------------------------- 質問リスト ---------------------------*/
+.qplan {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.qplan .title_qp {
+  font-size: 2em;
+  margin: 30px 0;
+}
+.qplan .qa {
+  text-align: left;
+}
+/* -------------------------Q&Aボックス ------------------------*/
+.qa *, .qa *::after, .qa *::before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.qa .actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 5px 0;
+	color: #1b2538;
+}
+.qa .actab input {
+	position: absolute;
+  opacity: 0;
+}   
+  /* 質問 */
+.qa .actab label {
+	font-weight: bold;
+	line-height: 1.6;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 1em 2em 1em 1em;
+	cursor: pointer;
+  border: 1px solid #666970;
+  font-size: 20px;
+}
+.qa .actab label::before {
+	font-family: "Font Awesome 5 Free";
+  content: '\f059';
+  font-weight: 400;
+  color: #0e5bce;
+}
+
+.qa .actab label:hover {
+  color: skyblue;
+  text-decoration: underline;
+}
+
+/* 答え */
+.qa .actab .actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.5s ease;
+	        transition: max-height 0.5s ease;
+	color: #333333;
+}
+.qa .actab .actab-content .text {
+  margin: 2em;
+  font-size: 16px;
+  font-weight: bold;
+}  
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.qa .actab input:checked ~ .actab-content {
+	max-height: 40em;
+}
+/* 質問をクリックした時のアイコンの動き */
+.qa .actab label::after {
+  line-height: 1.6;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	width: 3em;
+	margin-top: -12.5px;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+}
+.qa .actab input[type=checkbox] + label::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f107';
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 1.8em;
+}
+.qa .actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/*--------------------------- フッター -----------------------------*/
+.footer {
+  background-color: #dfdfdf;
+  padding: 30px;
+}
+.footer .text {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #74767b;
+}
+.footer .text span {
+  color: blue;
+}
+.footer .sure {
+  margin: 15px 0 30px;
+}
+
+/*------------------------------ トップボタン ---------------------------*/
+#topbutton {
+  /* ▼ボタンの表示位置を画面の右下に固定 */
+  position: fixed; /* ←表示場所を固定 */
+  bottom: 70px;   /* ←下端からの距離 */
+  right: 40px;    /* ←右端からの距離 */
+  width: 2em;     /* ←横幅 */
+  z-index: 1;
+
+  /* ▼最初は非表示にしておく */
+  display: none;
+
+  /* ▼配色・配置・文字の装飾など */
+  background-color: #dfdfdf; /* ←背景色 */
+  opacity: 0.75;        /* ←透明度 */
+  /* border-radius: 24px;  ←角丸の半径 */
+  text-align: center;  /* ←文字の位置 */
+  font-size: 3em;     /* ←文字サイズ */
+  font-weight: bold;   /* ←文字の太さ */
+  margin: 0px;          /* ←外側の余白 */
+  padding: 10px 20px;       /* ←内側の余白 */
+}
+#topbutton a {
+  /* ▼リンクの装飾 */
+  color: rgb(12, 12, 12);          /* ←文字色 */
+  text-decoration: none; /* ←下線なし */
+}
+#topbutton a:hover {
+  /* ▼マウスが載ったときの装飾 */
+  /* color: yellow;              ←文字色 */
+  /* text-decoration: underline; ←下線あり */
+  cursor: pointer;
+}
+
+/*----------------------- メディアクエリ ---------------------------------- */
+/* 600以下の画面 */
+@media screen and (max-width: 600px) {  
+  .body {
+    margin: 0;
+  }
+  .header {
+    text-align: left;
+    padding: 0;
+    justify-content:space-between;
+  }
+  .header_title {
+    display: block;
+    margin: 10px 0 5px 5px;
+  }
+  .header_title img {
+    width: 100px;
+  }
+  .header .header_title .text {
+    font-size: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+    display: block;
+  }
+  .header .button {
+    border-radius: 0px;
+    font-size: 0;
+    padding: 15px 10px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+  }
+  .header .button::before {
+    margin: 0 auto;
+    font-size: 25px;
+    /* background-image: url("image/form.png"); */
+    font-family: "Font Awesome 5 Free";
+    content: "\f15c";
+  }
+  .header a::after {
+    font-size: 14px;
+    content: "資料請求";
+  }
+
+  /* イメージカンプ */
+  .ic {
+    margin-top: 45px;
+    padding: 50px 30px;
+    background-size: cover;
+    opacity: 0.8;
+    background-image: url("image/mainsp.jpg");
+  } 
+.ic .title_ic {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.ic .text {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* コンタクト */
+.contact {
+  padding: 10px;
+}
+.contact .text {
+  font-size: 15px;
+}
+.contact .br::before {
+  content: "\A";
+  white-space: pre;
+}
+.contact_title .text {
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact_title .attensition {
+  font-size: 14px;
+  padding: 1px;
+}
+.contact .button {
+  margin: 20px auto;
+  width: 100%;
+  padding: 15px 40px;
+  font-size: 22px;
+}
+.contact .sure {
+  margin: 15px auto;
+}
+
+/* アセンション */
+.assertion {
+  padding: 50px 10px;
+  background-size: contain;
+  background-position: center bottom;
+}
+.title {
+  width: 100%;
+  font-size: 18px;
+  line-height: 2em;
+}
+.assertion .text {
+  font-size: 1em;
+}
+.title::before, .title::after {
+  width: 30px;
+  height: 30px;
+}
+.title::before {
+  border-top: 4px solid rgb(240, 174, 52);
+  border-left: 4px solid rgb(240, 174, 52);
+}
+.title::after {
+  border-bottom: 4px solid rgb(240, 174, 52);
+  border-right: 4px solid rgb(240, 174, 52);
+}
+.assertion .text {
+  font-size: 14px;
+  margin: 1em auto;
+  padding: 15px;
+  letter-spacing: 0;
+}
+.nobr {
+  display: block;
+}
+.assertion .text:nth-of-type(3) {
+  margin-bottom: 30px;
+}
+/* アバウト */
+.about {
+  padding: 50px 20px;
+}
+.about .point_icon {
+  left: 40%;
+}
+.about .title {
+  width: 100%;
+  font-size: 20px;
+}
+.about .about_title .text {
+  font-size: 16px;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+}
+.about .skill {
+  width: 100%;
+  padding: 5px 72px;
+}
+.skill .text {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.about .skill_box {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+.skill .skill_box li {
+  width: 50%;
+  margin: 0;
+  font-size: 10px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.skill .skill_box .skill_icon img{
+  height: 3em;
+}
+
+/* ステップ */
+.step {
+  background-image: url("image/aboutsecondbgsp.jpg");
+  background-size: cover;
+  font-size: 13px;
+  padding: 30px;
+}
+.step .step_title {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.step .text {
+  letter-spacing: 0;
+  font-size: 13px;
+  margin: 20px 0;
+  
+}
+.step .step_items {
+  display: block;
+}
+.step_items .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 15px 50px;
+}
+.step .step_items .item .text {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+.step_items .item .text_min {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* 一言 */
+.word {
+  padding: 15px 10px;
+}
+.word .text {
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+/* ティーチング */
+.teaching {
+  padding: 20px;
+}
+.t_title {
+  font-size: 17px;
+}
+.t_title span {
+  font-size: .7em;
+}
+.teaching .text {
+  font-size: 15px;
+  color: #3e3b3b;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.teaching .t_items {
+  padding: 10px;
+  margin: 0;
+}
+.t_items .t_item {
+  margin: 0;
+  margin-right: 1em;
+}
+.teaching .t_item img {
+  height: 4em;
+}
+
+/* メリット */
+.merit {
+  padding: 30px 20px;
+}
+.merit .merit_title .title {
+  font-size: 17px;
+  line-height: 1em;
+  padding-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+.merit .min_title {
+  font-size: 14px;
+  padding: 0 35px;
+  margin-bottom: 20px;
+}
+.merit_items {
+  display: block;
+  margin: 20px 0;
+}
+.merit_items .merit_item {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+.merit_items .merit_item img {
+  height: 100px;
+}
+.merit_item .text_title {
+  font-size: 16px;
+}
+.merit_item .text {
+  font-size: 12.6px;
+  padding: 0px 23px;
+  text-align: left;
+  color: #3e3b3b;
+  margin-bottom: 20px;
+}
+.merit .support {
+  width: 100%;
+  margin: 25px auto;
+  padding: 15px 10px;
+}
+.support .s_title {
+  font-size: 18px;
+  margin: 0;
+}
+.support .s_text {
+  font-size: 17px;
+  margin: 10px 0;
+}
+.support .text {
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+.ofbr {
+  display: none;
+}
+.wran {
+  letter-spacing: 0;
+  line-height: 1.7em;
+  margin: 0 -15px;
+  font-size: 12px;
+}
+
+/* 創業メンバー */
+.fm {
+  background-image: url(image/teacherbgsp.jpg);
+  padding: 70px 10px 20px ;
+}
+.fm .fm_title {
+  font-size: 18px;
+  margin: 15px auto;
+  letter-spacing: 2px;
+}
+.fm .subtext {
+  font-size: 13px;
+  padding: 15px 40px;
+  font-weight: normal;
+  margin: 0;
+}
+.members {
+  display: block;
+  margin: 0;
+}
+.members .member {
+  width: 100%;
+  margin: 0;
+  margin-top: 150px;
+  padding: 4em 1em 1em;
+}
+.member img {
+  height: 150px;
+  top: -110px;
+  right: 28%;
+}
+.member .text {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* question */
+.question {
+  padding: 20px 1em;
+}
+.question .qs {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 3em;
+}
+.question .point_icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  font-size: 12px;
+}
+.triangle-bottom {
+  border-width: 20px 20px 0;
+}
+
+/* アンサー */
+.answer {
+  padding: 0 5px 15px 0;
+}
+.answer .a_title {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0 20px 0;
+}
+.answer .subtext {
+  font-size: 12px;
+  margin: 0 auto;
+}
+.answer .wran {
+  margin: 30px 25px;
+}
+.coment {
+  width: 100%;
+}
+.coment img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+.coment .c_text {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.coment .c_text .text {
+  margin: 0;
+}
+.c_text .profile {
+  color: #aba6a6;
+}
+
+/* コンテンツ */
+.content {
+  background-image: url(image/classbgsp.jpg);
+  background-position: center;
+  padding: 50px 15px;
+}
+.content .title_co {
+  font-size: 18px;
+}
+.content .text {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 25px 0;
+}
+.content .content_box {
+  display: block;
+}
+.content_box .table {
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+}
+.table th {
+  font-size: 16px;
+}
+.table td {
+  font-size: 14px;
+}
+.word .w_class {
+  font-size: 16px;
+}
+
+/* 受講の流れ */
+.story {
+  padding: 30px 10px;
+}
+.story .title_st {
+  font-size: 20px;
+}
+.story .st_img {
+  display: none;
+}
+.story .knowingly {
+  display: block;
+	width: 100%;
+  margin: 0 0 5px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+.knowingly .knowingly_title {
+  display: flex;
+	margin: 0;
+  padding: 0 1em;
+  width: 100%;
+  line-height: 2.5;
+  padding: 0;
+}
+.knowingly_title img {
+  height: 40px;
+}
+.knowingly .knowingly_title .text_th {
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 0 -20px 0 15px;
+  text-align: left;
+}
+.knowingly .knowledge_texts {
+  padding: 0 20px;
+  overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.8s ease;
+	        transition: max-height 0.8s ease;
+}
+.knowingly .knowledge_texts .text {
+  font-size: 13px;
+}
+.knowingly .knowledge_texts .text_min {
+  font-size: 12px;
+  color: #74767b;
+  letter-spacing: 0;
+}
+.knowingly input {
+  top: 0;
+  right: 335px;
+}
+
+.knowingly *, .knowingly *::after, .knowingly *::before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.knowingly label {
+	display: block;
+	margin: 0 0 0 0;
+  font-size: 15px;
+}
+
+.knowingly input:checked ~ .knowledge_texts {
+  max-height: 40em;
+}
+
+
+.knowingly .knowingly_title label::after {
+  line-height: 1.6;
+	position: absolute;
+	top: 50%;
+	left: 270px;
+	display: block;
+	width: 3em;
+	margin-top: -12.5px;
+	-webkit-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
+	text-align: center;
+}
+.knowingly input[type=checkbox] +.knowingly_title label::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f107';
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 1.8em;
+}
+.knowingly input[type=checkbox]:checked + .knowingly_title label::after {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/* なぜバンコクなのか */
+.why {
+  background-image: url(image/bangkokbgsp.jpg);
+  background-position: center;
+  padding: 30px;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.why .text_ti {
+  font-size: 22px;
+  text-align-last: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+.why .text {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.why_list li {
+  font-size: 14px;
+}
+
+/* 特典 */
+.privilege .title_pr {
+  font-size: 18px;
+  margin: 20px 35px;
+}
+.privilege .text {
+  font-size: 13px;
+  padding: 10px;
+  margin: 0;
+  line-height: 1.8em;
+}
+.privilege .pl_box {
+  display: block;
+  width: 100%;
+  padding: 50px 2em;
+  margin-top: 50px;
+}
+.pl_box .box_title {
+  font-size: 18px;
+  top: -20px;
+  left: 20%;
+  padding: 0;
+  line-height: 1.5;
+}
+.pl_box .item {
+  height: 65px;
+  width: 65px;
+  margin-bottom: 2em;
+  padding: 25px 5px;
+}
+.pl_box .item .item_title {
+  font-size: 14px;
+  margin: 0;
+}
+.pl_box .point1::after {
+  content: "参加費以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。";
+  display: inline-block;
+  width: 200px;
+  margin-top: -50px;
+  margin-left: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 0 2px;
+  text-align: left;
+}
+.pl_box .point2::after {
+  content: "フリーランスエンジニアになるための動画講義を無料プレゼント";
+  display: inline-block;
+  width: 200px;
+  margin-top: -50px;
+  margin-left: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 0 2px;
+  text-align: left;
+}
+.pl_box .point3::after {
+  content: "フリーランス講師による個別コンサル（渡航前の週１回）";
+  display: inline-block;
+  width: 200px;
+  margin-top: -50px;
+  margin-left: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 0 2px;
+  text-align: left;
+}
+.pl_box .item .text {
+  display: none;
+}
+
+/* 企業理念 */
+.philosophy {
+  background-image: url(image/specialdetailsp.jpg);
+  background-position: center;
+  padding: 50px 15px;
+}
+.philosophy .title_ph {
+  font-size: 18px;
+}
+.philosophy .text {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 1.8em;
+}
+.ph::before {
+  border-top: 3px solid rgb(253, 252, 251);
+  border-left: 3px solid rgb(250, 249, 248);
+}
+.ph::after {
+  border-bottom: 3px solid rgb(250, 249, 247);
+  border-right: 3px solid rgb(252, 251, 250);
+}
+.philosophy .ph {
+  font-size: 18px;
+  padding: 10px 30px;
+}
+
+/* メッセージ */
+.message {
+  padding: 40px 15px;
+}
+.message .title_ms {
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.message .subtitle {
+  font-size: 16px;
+  margin: 20px 40px;
+}
+.message_ceo {
+  width: 100%;
+  display: block;
+}
+.message_ceo img {
+  height: 100%;
+  width: 100%;
+}
+.message_ceo .message_text {
+  margin: 0;
+}
+.message_text .items {
+  margin: 30px 0;
+}
+
+/* フォーム */
+.form {
+  padding: 30px 15px;
+}
+.form .title_fo {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.form .subtitle {
+  font-size: 14px;
+}
+.form .form_item {
+  width: 100%;
+  text-align: center;
+}
+.form_item input[type="submit"]  {
+  letter-spacing: 20px;
+}
+
+/* 質問リスト */
+.qplan {
+  width: 100%;
+  padding: 50px 15px;
+}
+.qplan .title_qp {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.qa .actab label {
+  font-size: 15px;
+  padding: 15px 2em 15px 15px;
+}
+.qa .actab .actab-content .text {
+  font-size: 13px;
+  font-weight: normal;
+}
+.qa .actab label::after {
+  width: 2em;
+  color: #d0c5c5;
+}
+.qa .actab input[type=checkbox] + label::after {
+  font-size: 1.5em;
+}
+
+/* フッター */
+.footer {
+  padding: 15px;
+}
+.footer .text {
+  font-size: 10px;
+}
+.footer .cp {
+  padding: 0;
+  margin: 0;
+}
+
+/* トップボタン */
+#topbutton {
+  bottom: 50px;
+  right: 15px;
+  width: 2.5em;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .t_nobr{
+    display: block;
+  }
+  .ofbr {
+    display: none;
+  }
+  .header {
+    text-align: left;
+    padding: 0;
+    justify-content:space-between;
+  }
+  .header_title {
+    display: block;
+    margin: 10px 0 10px 5px;
+  }
+  .header_title img {
+    width: 100px;
+  }
+  .header .header_title .text {
+    margin-bottom: 5px;
+    letter-spacing: 0;
+    display: block;
+  }
+  .header .button {
+    border-radius: 0px;
+    font-size: 0;
+    padding: 15px 10px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+  }
+  .header .button::before {
+    margin: 0 auto;
+    font-size: 25px;
+    /* background-image: url("image/form.png"); */
+    font-family: "Font Awesome 5 Free";
+    content: "\f15c";
+  }
+  .header a::after {
+    font-size: 14px;
+    content: "資料請求";
+  }
+
+
+
+  .ic {
+    background-image: url("image/mainsp.jpg");
+    background-position: center;
+  }
+  .contact .text {
+    font-size: 18px;
+  }
+  .contact .br::before {
+    content: "\A";
+    white-space: pre;
+  }
+  .contact .button {
+    margin: 20px auto;
+    width: 80%;
+    padding: 30px 190px;
+    font-size: 20px;
+  }
+
+
+
+  .assertion {
+    padding: 50px 15px;
+    background-size: contain;
+  background-position: center bottom;
+  }
+  .title {
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.5em;
+    padding: 10px;
+  }
+  .assertion .nobr {
+    display: block;
+  }
+  .assertion .text:nth-of-type(3) {
+    margin-bottom: 50px;
+  }
+
+
+
+  .about {
+    padding: 50px 20px;
+  }
+  .about .point_icon {
+    left: 45%;
+  }
+  .about .about_title .text {
+    margin: 22px 200px;
+  }
+  .about .skill {
+    width: 100%;
+    padding: 10px 30px 20px;
+  }
+  .about .skill_box {
+    padding: 0;
+  }
+  .skill .text {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .skill .skill_box .skill_icon img{
+    height: 2em;
+  }
+  .skill .skill_box li {
+    width: 50%;
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+
+.step {
+  background-image: url("image/aboutsecondbgsp.jpg");
+  background-position: center bottom;
+  font-size: 15px;
+  padding: 30px;
+}
+.step .text {
+  letter-spacing: 0;
+}
+.step .step_items {
+  display: block;
+  margin: 40px;
+}
+.step_items .item {
+  width: 300px;
+  padding: 15px 20px;
+  margin: 20px auto;
+}
+
+
+.word {
+  padding: 15px 10px;
+}
+.word .text {
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+
+
+.teaching {
+  padding: 25px;
+}
+.teaching .text {
+  font-size: 17px;
+  color: #3e3b3b;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.teaching .t_items {
+  padding: 20px 50px;
+  margin: 0;
+  justify-content: space-around;
+}
+.teaching .t_item img {
+  height: 8em;
+}
+
+
+.merit {
+  padding: 30px 40px;
+}
+.merit .min_title {
+  padding: 15px;
+  line-height: 1.5;
+}
+.merit_items {
+  display: block;
+}
+.merit_items .merit_item {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+.merit_items .merit_item img {
+  height: 130px;
+  width: 300px;
+}
+.merit_item .text_title {
+  font-size: 18px;
+  margin: 5px;
+}
+.merit_item .text {
+  text-align: left;
+  font-size: 14px;
+  margin: 10px auto 20px;
+}
+.merit .support {
+  width: 90%;
+  margin: 30px auto;
+  padding: 15px 10px;
+}
+.support .s_title {
+  margin: 0;
+}
+.support .s_text {
+  font-size: 17px;
+  margin: 10px 140px;
+}
+.support .text {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+.wran {
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+
+.fm {
+  background-image: url(image/teacherbgsp.jpg);
+  padding: 70px 10px 40px ;
+}
+.fm .fm_title {
+  font-size: 25px;
+  margin: 15px auto;
+  letter-spacing: 2px;
+}
+.fm .subtext {
+  margin: 25px;
+}
+.members {
+  display: block;
+  margin: 0;
+}
+.members .member {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 4em 1em 1em;
+}
+.member img {
+  height: 150px;
+  top: -100px;
+  right: 40%;
+}
+.member .text {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+.question {
+  padding: 20px 1em;
+}
+
+.coment {
+  width: 90%;
+}
+.coment .c_text {
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-left: 25px;
+}
+.coment .c_text .text {
+  margin: 0;
+}
+
+
+.content {
+  background-image: url(image/classbgsp.jpg);
+  background-position: center;
+  padding: 50px 15px;
+}
+.content .title_co {
+  font-size: 25px;
+}
+.content .content_box {
+  display: block;
+}
+.content_box .table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.word .w_class {
+  font-size: 18px;
+}
+
+
+.story {
+  padding: 40px 10px;
+}
+.story .title_st {
+  font-size: 20px;
+}
+.story .st_img {
+  display: none;
+}
+.story .knowingly {
+  display: block;
+	width: 90%;
+  margin: 0 auto 5px;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+.knowingly .knowingly_title {
+  display: flex;
+	margin: 0;
+  padding: 0 1em;
+  width: 100%;
+  line-height: 2.5;
+  padding: 0;
+}
+.knowingly_title img {
+  height: 40px;
+}
+.knowingly .knowingly_title .text_th {
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 0 -20px 0 15px;
+  text-align: left;
+}
+.knowingly .knowledge_texts {
+  padding: 0 20px;
+  overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.8s ease;
+	        transition: max-height 0.8s ease;
+}
+.knowingly .knowledge_texts .text {
+  font-size: 13px;
+}
+.knowingly .knowledge_texts .text_min {
+  font-size: 12px;
+  color: #74767b;
+  letter-spacing: 0;
+}
+.knowingly input {
+  top: 0;
+  right: 335px;
+}
+
+.knowingly *, .knowingly *::after, .knowingly *::before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.knowingly label {
+	display: block;
+	margin: 0 0 0 0;
+  font-size: 15px;
+}
+.knowingly input:checked ~ .knowledge_texts {
+  max-height: 40em;
+}
+
+
+.knowingly .knowingly_title label::after {
+  line-height: 1.6;
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	display: block;
+	width: 3em;
+	margin-top: -12.5px;
+	-webkit-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
+	text-align: center;
+}
+.knowingly input[type=checkbox] +.knowingly_title label::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f107';
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 1.8em;
+}
+.knowingly input[type=checkbox]:checked + .knowingly_title label::after {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+
+.why {
+  background-image: url(image/bangkokbgsp.jpg);
+  background-position: center;
+  padding: 30px 15px;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding-left: 6em;
+}
+.why .text_ti {
+  font-size: 22px;
+  text-align-last: center;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+.why_list li {
+  font-size: 14px;
+  font-weight: normal;
+}
+.why .text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+
+.privilege .title_pr {
+  font-size: 24px;
+  margin: 20px 35px;
+  font-weight: bold;
+}
+.privilege .pl_box {
+  display: block;
+  width: 100%;
+  padding: 70px 4em 30px;
+  margin-top: 50px;
+}
+.pl_box .box_title {
+  font-size: 22px;
+  width: 350px;
+  top: -20px;
+  left: 30%;
+  padding: 0 40px;
+  line-height: 1.5;
+}
+.pl_box .item {
+  height: 90px;
+  width: 90px;
+  margin-bottom: 2.5em;
+  padding: 20px 5px;
+}
+.pl_box .item .item_title {
+  font-size: 22px;
+  margin: 0;
+  line-height: 50px;
+}
+.pl_box .item .text {
+  display: none;
+}
+.pl_box .point1::after {
+  content: "参加費以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。";
+  display: inline-block;
+  width: 460px;
+  margin-top: -30px;
+  margin-left: 150px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 2px;
+  text-align: left;
+  
+}
+.pl_box .point2::after {
+  content: "フリーランスエンジニアになるための動画講義を無料プレゼント";
+  display: inline-block;
+  width: 460px;
+  margin-top: -30px;
+  margin-left: 150px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 2px;
+  text-align: left;
+}
+.pl_box .point3::after {
+  content: "フリーランス講師による個別コンサル（渡航前の週１回）";
+  display: inline-block;
+  width: 460px;
+  margin-top: -30px;
+  margin-left: 150px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 2px;
+  text-align: left;
+}
+
+
+.philosophy {
+  background-image: url(image/specialdetailsp.jpg);
+  background-position: center;
+  padding: 40px 15px 80px;
+}
+.philosophy .title_ph {
+  font-size: 24px;
+}
+.philosophy .text {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.8em;
+}
+
+
+.message {
+  padding: 40px;
+}
+.message .title_ms {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.message .subtitle {
+  font-size: 18px;
+  width: 60%;
+  padding: 0 65px;
+  margin: 40px auto;
+}
+.message_ceo {
+  width: 100%;
+  display: block;
+}
+.message_ceo img {
+  height: 100%;
+  width: 100%;
+}
+.message_ceo .message_text {
+  margin: 0;
+  margin-top: 2em;
+}
+
+
+.form .form_item {
+  width: 80%;
+  text-align: center;
+}
+
+
+.qplan {
+  width: 100%;
+  padding: 50px 40px;
+}
+.qa .actab label {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #d0c5c5;
+}
+.qa .actab label::after {
+  width: 2em;
+  color: #d0c5c5;
+}
+.qa .actab input[type=checkbox] + label::after {
+  font-size: 1.5em;
+}
+
+
+.footer {
+  padding: 15px;
+}
+
+
+#topbutton {
+  bottom: 20px;
+  right: 15px;
+  width: 2.5em;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 996px){
+.p {
+  display: block;
+}
+.disp {
+  display: none;
+}
+.header {
+  justify-content:space-between;
+  padding-right: 30px;
+}
+
+.contact .button {
+  margin: 20px auto;
+  width: 80%;
+  padding: 30px 190px;
+  font-size: 20px;
+}
+
+.about .skill {
+  width: 90%;
+  padding: 10px 30px 20px 0;
+}
+.about .skill_box {
+  padding: 0;
+}
+
+.teaching .t_items {
+  padding: 20px 50px;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.merit .support {
+  width: 90%;
+  margin: 30px auto;
+  padding: 15px 10px;
+}
+
+
+.story .st_img {
+  width: 90%;
+}
+.story .knowingly {
+	width: 90%;
+}
+
+
+
+.form .form_item {
+  width: 80%;
+  text-align: center;
+}
+
+
+.qplan {
+  width: 100%;
+}
+
+
+}
